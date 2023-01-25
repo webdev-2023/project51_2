@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+/* Requirement Statement: create a to-do application using React and Redux.
+*/
+
+// Main Component - to display the Header, Add Task and Tasks components
+
+import Header from "./components/Header";
+import Tasks from "./components/Tasks";
+import AddTask from './components/AddTask';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <Header />
+      <AddTask />
+      <Tasks />
     </div>
   );
 }
 
 export default App;
+
